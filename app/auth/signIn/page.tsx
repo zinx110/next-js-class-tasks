@@ -2,27 +2,14 @@
 import React from "react";
 import Form from "../components/Form";
 import Heading from "../components/Heading";
+import SignInForm from "./components/SignInForm";
 
 const page = () => {
+    const handleClick = () => {};
     return (
         <div className="h-full w-full flex flex-col justify-center items-center gap-4">
             <Heading name="Sign In" />
-            <Form>
-                <p>
-                    username :
-                    <input className="text-black" name="username" />
-                </p>
-                <p>
-                    password :
-                    <input className="text-black" name="password" />
-                </p>
-                <button
-                    className="p-2 bg-green-400"
-                    onClick={() => alert("logged in")}
-                >
-                    Login
-                </button>
-            </Form>
+            <SignInForm />
         </div>
     );
 };

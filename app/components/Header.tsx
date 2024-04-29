@@ -1,10 +1,13 @@
 import React from "react";
+
+import LogoutButton from "./LogoutButton";
 import Nav from "./Nav";
 
 const Header = () => {
     return (
-        <div className="h-10 w-full flex justify-center items-center bg-green-700">
+        <div className="h-10 px-10 py-10 w-full flex justify-between items-center bg-green-700 ">
             <Nav />
+            <LogoutButton />
         </div>
     );
 };

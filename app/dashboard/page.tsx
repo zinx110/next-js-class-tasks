@@ -1,10 +1,13 @@
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import React from "react";
+import LoginChecker from "../auth/LoginChecker";
 import SearchUser from "./components/SearchUser";
 
 const Dashboard = () => {
     return (
         <div className="h-full flex flex-col gap-3">
+            <LoginChecker />
             <h1>Dashboard</h1>
             <div className="flex-1 flex gap-2 flex-col justify-center items-center px-10">
                 <h1 className="text-lg font-bold ">Search Users</h1>
